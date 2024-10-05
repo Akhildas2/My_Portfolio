@@ -485,37 +485,31 @@ section .container {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.skills .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: ease-in-out 0.3s;
 }
 
-.skills .progress .skill {
-  padding: 10px 0;
+.skills .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.skills .icon-box h3 {
+  font-weight: 700;
   margin: 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
   color: #fff;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #18d26e;
+.skills .icon-box:hover {
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /*--------------------------------------------------------------
@@ -816,6 +810,12 @@ section .container {
   overflow: hidden;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .portfolio-wrap img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .portfolio .portfolio-wrap::before {
